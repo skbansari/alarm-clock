@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alarm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2>
+        <span class="all">All </span><span class="in">In</span
+        ><span class="one">One</span>
+      </h2>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="" class="navbar-link">Home</a></li>
+          <li><a href="" class="navbar-link">Contect us</a></li>
+
+          <li><a href="" class="navbar-link">Calculator</a></li>
+          <li><a href="" class="navbar-link">Alarm clock</a></li>
+          <li><a href="" class="navbar-link">Digital Clock</a></li>
+          <li><a href="" class="navbar-link">stop watch</a></li>
+          <li><a href="" class="navbar-link">Calender</a></li>
+          <li><a href="" class="navbar-link">temperature converter</a></li>
+          <li><a href="" class="navbar-link">Word Counter</a></li>
+          <li><a href="" class="navbar-link">Tic tac toe</a></li>
+          <li><a href="" class="navbar-link">Todo List</a></li>
+        </ul>
+      </nav>
+      <div class="tital">
+        <nav class="desktop">
+          <ul class="desktop-list">
+            <li class="desktop-home"><a href="">HOME</a></li>
+            <li class="desktop-Contect"><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-icons-btn">
+        <button class="menu"><i class="fa-solid fa-bars"></i></button>
+        <button class="exit remove"><i class="fa-solid fa-x"></i></button>
+      </div>
+    </header>
+    <section id="main-clock">
+      <div class="Maincontainer">
+        <div class="img-con">
+          <img src="/alarm-icon-8161 (1).png" alt="" srcset="" />
+        </div>
+        <div id="main-container">
+          <h2 id="clock"></h2>
+        </div>
+
+        <div id="alarm-container">
+          <h3>Set Alarm Time</h3>
+          <label>
+            <div>
+              <select id="alarmhrs"></select>
+            </div>
+          </label>
+          <label>
+            <div>
+              <select id="alarmmins"></select>
+            </div>
+          </label>
+          <label>
+            <div>
+              <select id="alarmsecs"></select>
+            </div>
+          </label>
+          <label>
+            <div>
+              <select id="ampm">
+                <option value="AM/PM" selected hidden>AM/PM</option>
+
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
+          </label>
+        </div>
+
+        <div id="buttonHolder flex">
+          <button id="setButton" onClick="alarmSet()">Set Alarm</button>
+
+          <button id="clearButton" onClick="alarmClear()">Clear Alarm</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/7ab523d5b9.js"></script>
+    </section>
+  </body>
+</html>
